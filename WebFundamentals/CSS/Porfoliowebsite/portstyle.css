@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+  background-color: rgb(233, 230, 232);
+  width: 970px
+}
+#header{
+  display: inline-block;
+}
+#header h1{
+  padding: 20px;
+}
+#header p{
+  position: relative;
+  left: 475px;
+  bottom: 50px;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.photo-of-me{
+  width: 430px;
+  height: 229px;
+  display: inline-block;
+}
+#box {
+  background-color: rgb(54, 9, 42);
+  padding: 20px;
+}
+#intro{
+  display: inline-block;
+  width: 450px;
+  vertical-align: top;
+  margin-left: 30px;
+  background-color: rgb(200, 163, 200);
+}
+#intro h2{
+  background: linear-gradient(to bottom, #c999be 31%,#a5729a 73%);
+  color: rgb(229, 213, 231);
+}
+#intro p{
+  background-color: rgb(200, 163, 200);
+  padding: 10px;
+}
+#intro a{
+  background-color: rgb(200, 163, 200);
+}
+#websiteinfo {
+  margin-top: 20px;
+}
+.w1{
+  background-color: rgb(200, 163, 200);
+  display: inline-block;
+  width: 270px;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 15px;
+  height: 370px;
+}
+.w1 h2{
+  background: linear-gradient(to bottom, #c999be 31%,#a5729a 73%);
+  color: rgb(229, 213, 231);
+}
+.w1 p{
+  padding: 10px;
+}
+.w1 img{
+  width: 270px;
+  display: inline-block;
+}
+.w2{
+  background-color: rgb(200, 163, 200);
+  display: inline-block;
+  width: 270px;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 15px;
+  height: 170px;
+}
+.w2 h3{
+  background: linear-gradient(to bottom, #c999be 31%,#a5729a 73%);
+  color: rgb(229, 213, 231);
+}
+.w2 img{
+  width: 35px;
+}
+.w2 a{
+  display:block;
+  background-color: green;
+  margin: 10px 85px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 10px 10px 5px #888888;
+}
+#footer {
+  display:inline-block;
+}
+#footer p{
+  position:relative;
+  left: 400px;
+}
+#footer a{
+  position:relative;
+  left: 350px;
+}
+#footer img{
+  width: 20px;
+  height 20px;
+  position:relative;
+  left: 350px;
+}
