@@ -1,0 +1,190 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 970px;
+}
+.globe {
+  width: 100px;
+  display:inline-block;
+}
+.title {
+  display:inline-block;
+  position:relative;
+  bottom: 30px;
+  font-family: arial;
+  font-size: 41px;
+  font-weight:lighter;
+}
+.title span{
+  color: blue;
+}
+.banner {
+  background-color:rgb(18, 74, 200);
+  color: white;
+  font-family: arial;
+  font-weight:lighter;
+  font-size: 27px;
+  padding: 15px;
+  margin-top: -25px;
+}
+#wrapper {
+  background-color:rgb(237, 237, 237);
+  font-family: sans-serif;
+}
+.bluetext {
+  color: rgb(31, 173, 177);
+}
+.box1{
+  width: 200px;
+  padding: 15px 0px 0px 5px;
+  display:inline-block;
+  margin-right: 30px;
+}
+.topbox1{
+  border-bottom: 1px solid black;
+}
+h4 span{
+  color: red;
+}
+.pbox1 {
+  font-size: 13px;
+  font-weight:bolder;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.pbox1 span{
+  color: blue;
+}
+.vidbox1{
+  display: block;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin: 0px 3px 7px 3px;
+  border-radius: 5px;
+}
+.resbox1{
+  display: block;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin: 0px 3px 25px 3px;
+  border-radius: 5px;
+}
+.inbox1 {
+  background-image: url("imagesinternet/ad_background.png");
+  margin-top: 25px;
+}
+.inbox1 p{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 10px 5px
+}
+.ninja {
+  width: 100px;
+  position: relative;
+  left: 45px;
+  padding-bottom:20px;
+}
+h3 {
+  color: blue;
+}
+.inbox1 a{
+  display: block;
+  padding-top: 10px;
+  background-color: rgb(31, 173, 177);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 25px;
+  position: relative;
+  bottom: 20px;
+}
+.box2 {
+  display:inline-block;
+  border-bottom: 1px solid black;
+  width: 720px;
+  height: 80px;
+  vertical-align: top;
+}
+.leftbox2{
+  display: inline-block;
+}
+.home{
+  width: 23px;
+  vertical-align: top;
+}
+.phone{
+  width: 41px;
+  position: relative;
+  left: 460px;
+}
+.leftbox2 p{
+  color: blue;
+  position: relative;
+  left: 27px;
+  bottom: 15px;
+}
+.rightbox2{
+  display:inline-block;
+  position:relative;
+  left: 460px;
+  text-align: center;
+}
+.line1, .line3 {
+  font-size: 12px;
+}
+.line2 {
+  color: rgb(31, 173, 177);
+  font-size: 23px;
+  font-weight: bolder;
+}
+.box3 {
+  width: 670px;
+  display:inline-block;
+  position: relative;
+  left: 250px;
+  bottom: 460px;
+  padding: 5px;
+}
+.box3 p, li{
+  font-size: 12px;
+}
+.box3 li{
+  margin-left: 30px;
+}
+.clientserver {
+  width: 250px;
+  margin-left: 190px;
+  padding: 20px 0px;
+}
+.box4 {
+  width: 670px;
+  height: 140px;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  left: 240px;
+  bottom: 420px;
+  border-top: 2px solid blue;
+  border-right: 2px solid blue;
+  border-left: 2px solid blue;
+}
+.html {
+  position: relative;
+  left:10px;
+  top: 10px;
+  width: 120px;
+}
+.botbox4{
+  width: 475px;
+  position: relative;
+  left: 150px;
+  bottom: 100px;
+}
