@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Functions</title>
+    <style>
+      .picked{
+        color: blue;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="JQstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        alert('hello');
+        $('.click button').click(function(){
+          alert('you just clicked a button!');
+        })
+        $('.hide button').click(function(){
+          $('.hide p').hide('slow');
+        })
+        $('.show button').click(function(){
+          $('.show p').show('slow');
+        })
+        $('.toggle button').click(function(){
+          $('.toggle p').toggle('fast');
+        })
+        $('.slidedown button').click(function(){
+          $('.slidedown p').slideDown();
+        })
+        $('.slideup button').click(function(){
+          $('.slideup p').slideUp();
+        })
+        $('.slidetoggle button').click(function(){
+          $('.slidetoggle p').slideToggle();
+        })
+        $('.fadein button').click(function(){
+          $('.fadein p').fadeIn(200);
+        })
+        $('.fadeout button').click(function(){
+          $('.fadeout p').fadeOut();
+        })
+        $('.addclass button').click(function(){
+          $('.addclass p').addClass("picked");
+        })
+        $('.before button').click(function(){
+          $('.before p').before("IM BEFORE THE PARAGRAPH");
+        })
+        $('.after button').click(function(){
+          $('.after p').after("IM AFTER THE PARAGRAPH");
+        })
+        $('.append button').click(function(){
+          $('.append p').append("IM ON THE SAME ELEMENT AT THE END");
+        })
+        $('.html button').click(function(){
+          $('.html p').html("<h2>html changed the p tag to header 2</h2>");
+        })
+        $('.attr button').click(function(){
+          $('.attr ').attr("class", "BlueBorder");
+        })
+        $('.val button').click(function(){
+          var answer = $('.yesorno').val();
+          $( ".val p" ).html("<h1>answer is</h1>" + answer);
+        })
+        $('.text button').click(function(){
+          $('.text p').text("<p>just straight text<p>");
+        })
+        $('.data button').click(function(){
+          $('.data').data("numofLines", 2);
+          $( ".data h1" ).text($('.data').data('numofLines'));
+        })
+
+      });
+    </script>
+
+  </head>
+  <body>
+    <div class ="wrapper">
+      <div class="click">
+        <h2>Click(eventlisterner)</h2>
+        <button>ClickME!!</button>
+        <p>press the button to see what happens</p>
+      </div>
+      <div class="hide">
+        <h2>Hide</h2>
+        <button>hide</button>
+        <p>press the button to hide this paragraph</p>
+      </div>
+      <div class="show">
+        <h2>Show</h2>
+        <button>show</button>
+        <p style="display: none">press the button to see what show does!</p>
+      </div>
+      <div class ="toggle">
+        <h2>Toggle</h2>
+        <button>toggle</button>
+        <p>press the button to see what toggle does!</p>
+      </div>
+      <div class="slidedown">
+        <h2>Slidedown</h2>
+        <button>slidedown</button>
+        <p style="display: none">press the button and watch me slide down!</p>
+      </div>
+      <div class="slideup">
+        <h2>Slideup</h2>
+        <button>slidedown</button>
+        <p>press the button and watch me slide up!</p>
+      </div>
+      <div class="slidetoggle">
+        <h2>Slidetoggle</h2>
+        <button>slidetoggle</button>
+        <p>press the button and watch me slide toggle!</p>
+      </div>
+      <div class="fadein">
+        <h2>Fadein</h2>
+        <button>fadein</button>
+        <p style="display: none">press the button and watch me fadein!</p>
+      </div>
+      <div class="fadeout">
+        <h2>Fadeout</h2>
+        <button>fadeout</button>
+        <p>press the button and watch me fadeout!</p>
+      </div>
+      <div class="addclass">
+        <h2>Addclass</h2>
+        <button>addclass</button>
+        <p>press the button and watch me addclass!</p>
+      </div>
+      <div class="before">
+        <h2>Before</h2>
+        <button>before</button>
+        <p>press the button and watch me say something before this!</p>
+      </div>
+      <div class="after">
+        <h2>After</h2>
+        <button>after</button>
+        <p>press the button and watch me say something after this!</p>
+      </div>
+      <div class="append">
+        <h2>Append</h2>
+        <button>append</button>
+        <p>press the button and watch me add something to the end of this sentence!</p>
+      </div>
+      <div class="html">
+        <h2>Html</h2>
+        <button>html</button>
+        <p>press the button and watch me change this HTML!</p>
+      </div>
+      <div class="attr">
+        <h2>Attr</h2>
+        <button>attr</button>
+        <p>press the button and watch an atrribute change</p>
+        <!-- //getting setting -->
+      </div>
+      <div class="val">
+        <h2>Val</h2>
+        <select class="yesorno">
+        <option>yes</option>
+        <option>no</option>
+        </select>
+        <button>val</button>
+        <p></p>
+      </div>
+      <div class="text">
+        <h2>Text</h2>
+        <button>text</button>
+        <p>hi</p>
+        <p>hi</p>
+        <p>hi</p>
+      </div>
+      <div class="data">
+        <h2>Data</h2>
+        <button>data</button>
+        <p>this is one line</p>
+        <h1>this is another line</h1>
+      </div>
+      <div class="BlueBorder">
+      </div>
+    </div>
+
+  </body>
+</html>

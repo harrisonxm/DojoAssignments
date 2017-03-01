@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>studentinstructorbonus</title>
+  </head>
+  <body>
+
+    <script type ="text/javascript">
+
+  var users = {
+   'Students': [
+       {first_name:  'Michael', last_name : 'Jordan'},
+       {first_name : 'John', last_name : 'Rosales'},
+       {first_name : 'Mark', last_name : 'Guillen'},
+       {first_name : 'KB', last_name : 'Tonel'}
+    ],
+   'Instructors': [
+       {first_name : 'Michael', last_name : 'Choi'},
+       {first_name : 'Martin', last_name : 'Puryear'}
+    ]
+   }
+  // Create a program that prints  the following format (including the number of characters in each combined name):
+
+  // Students
+  // 1 - MICHAEL JORDAN - 13
+  // 2 - JOHN ROSALES - 11
+  // 3 - MARK GUILLEN - 11
+  // 4 - KB TONEL - 7
+  // Instructors
+  // 1 - MICHAEL CHOI - 11
+  // 2 - MARTIN PURYEAR - 13
+
+function peopleinfo(people){
+  for(var title in people){
+    console.log(title);
+    var i = 1;
+    for (var name in people[title]){
+      console.log( i + " " + "-" + " " + people[title][name].first_name + " " + people[title][name].last_name + " " + "-" + (people[title][name].first_name.length + people[title][name].last_name.length) );
+      i++;
+  }
+
+  }
+}
+peopleinfo(users);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Chance</title>
+  </head>
+  <body>
+
+    <script type ="text/javascript">
+      "use strict";
+
+      function randomchance(quarters){
+        while(quarters > 0){
+          quarters -= 1;
+          if (Math.trunc(Math.random()*100) + 1 == 2){
+            quarters += Math.floor(Math.random()*51) + 50;
+            console.log("YOU JUST WON" + " " + "you now have" + " " + quarters + " " + "quarters" );
+            break;
+          }
+          if (quarters == 0){
+            return 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

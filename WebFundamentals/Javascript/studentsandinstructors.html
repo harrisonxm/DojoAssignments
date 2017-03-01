@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Chance</title>
+  </head>
+  <body>
+
+    <script type ="text/javascript">
+    var students = [
+     {first_name:  'Michael', last_name : 'Jordan'},
+     {first_name : 'John', last_name : 'Rosales'},
+     {first_name : 'Mark', last_name : 'Guillen'},
+     {first_name : 'KB', last_name : 'Tonel'}
+   ]
+    //  Michael Jordan    //program that prints this
+    //  John Rosales
+    //  Mark Guillen
+    //  KB Tonel
+
+     function studentnames(object){
+       for(var person in object){
+         console.log(object[person].first_name);
+       }
+     }
+
+     studentnames(students);
+
+
+    </script>
+  </body>
+</html>
