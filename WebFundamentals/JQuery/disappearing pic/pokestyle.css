@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 900px;
+}
+img {
+  width: 200px;
+  display:inline-block;
+}
+.button {
+  text-align: center;
+}

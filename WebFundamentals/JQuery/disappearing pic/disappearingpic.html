@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Functions</title>
+    <link rel="stylesheet" type="text/css" href="pokestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('img').click(function(){
+          $(this).attr("src","");
+        })
+        $('button').click(function(){
+          $('.bulb').attr("src", "pokeimages/bulbasaur.png");
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div class="pic">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+      <img class="bulb" src="pokeimages/bulbasaur.png" alt="">
+    </div>
+    <div class="button">
+      <button>Restore</button>
+    </div>
+  </body>
+</html>
