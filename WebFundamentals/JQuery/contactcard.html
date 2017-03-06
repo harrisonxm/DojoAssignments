@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <style>
+      #Userinfo{
+        width: 200px;
+        display: inline-block;
+      }
+      .CC{
+        border: 1px solid black;
+        display: inline-block;
+        text-align: center;
+        padding:15px;
+      }
+      .back h5{
+        display:none;
+      }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      function makecontactcard(){
+        $('#Userinfo').after("<div class='CC'><div class='front'><h1>"
+        + $("input[name=first_name]").val() + " " + $("input[name=last_name]").val() +
+        "</h1> <h3>Click for description!</h3></div><div class='back'><h5>" +
+        $("textarea[name=description]").val() + "</h5></div>");
+      }
+
+      function getdescript(){
+          $('.front h3').css('display','none');
+          $('.back h5').css('display', 'block');
+      }
+
+      $(document).ready(function(){
+        $(document).on('click', ".submit", function(){
+          makecontactcard();
+        })
+        $(document).on('click', ".front h3", function(){
+          getdescript();
+        })
+
+
+        $("form").submit(function(){
+          return false;
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div id="Userinfo">
+      <form>
+        <label class="FN">First_Name:<input type="text" name="first_name"></label>
+        <label class="LN">Last_Name:<input type="text" name="last_name"></label>
+        <p>Description:</p>
+        <textarea name="description"></textarea>
+        <input class="submit" type="submit" value="Add_User">
+      </form>
+    </div>
+  </body>
+</html>

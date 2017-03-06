@@ -1,0 +1,78 @@
+pip install Django - installs django through terminal
+Installs packages from:
+PyPI (and other indexes) using requirement specifiers.
+VCS project urls.
+Local project directories.
+Local or remote source archives.
+pip also supports installing from "requirements files", which provide an easy way to specify a whole environment to be installed.
+
+pip list - List installed packages, including editables.
+Packages are listed in a case-insensitive sorted order.
+OUTPUT:
+click (6.7)
+Django (1.10.6)
+Flask (0.12)
+itsdangerous (0.24)
+Jinja2 (2.9.5)
+MarkupSafe (0.23)
+pip (9.0.1)
+setuptools (16.0)
+Werkzeug (0.11.15)
+
+pip freeze - Output installed packages in requirements format.
+(saved a file in directory listing packages in requirements format.
+packages are listed in a case-insensitive sorted order.
+OUTPUT:
+click==6.7
+Django==1.10.6
+Flask==0.12
+itsdangerous==0.24
+Jinja2==2.9.5
+MarkupSafe==0.23
+Werkzeug==0.11.15
+
+cd to desktop then pip freeze > requirements.txt then typed DIR 
+OUTPUT: 03/04/2017  12:11 PM    <DIR>          .
+03/04/2017  12:11 PM    <DIR>          ..
+02/26/2017  03:15 PM    <DIR>          ACER and Miscellaneous
+02/17/2017  09:47 PM                 0 Ask about sql drop box and twitter tuition.txt
+02/28/2017  03:15 PM             2,260 Atom.lnk
+02/26/2017  03:16 PM    <DIR>          Avast
+02/24/2017  02:36 PM    <DIR>          belt exams
+03/03/2017  04:38 PM    <DIR>          Coding Dojo Codes
+02/28/2017  08:20 PM    <DIR>          Debugging-jQuery
+02/28/2017  08:55 PM           868,183 Debugging-jQuery.zip
+02/28/2017  07:19 PM            54,444 disappearing pic.zip
+03/03/2017  04:37 PM    <DIR>          DojoAssignments
+02/15/2017  03:52 PM    <DIR>          financial coding dojo
+02/27/2017  08:13 PM             1,218 js_scroll-master.zip
+02/26/2017  03:16 PM    <DIR>          MS OFFICE
+03/03/2017  11:19 AM             2,240 MySQL Workbench 6.3 CE.lnk
+11/08/2016  04:39 PM                43 New Text Document.txt
+02/26/2017  03:16 PM    <DIR>          Online CS50 and MIT
+03/04/2017  12:11 PM               576 pippractice.txt
+03/04/2017  12:11 PM               113 requirements.txt
+02/26/2017  03:54 PM             4,511 sample-typesetting.zip
+02/28/2017  07:39 PM    <DIR>          zipped files coding dojo
+              10 File(s)        933,588 bytes
+              12 Dir(s)  947,334,029,312 bytes free
+
+pip show Django - Show information about one or more installed packages.
+OUTPUT:
+Name: Django
+Version: 1.10.6
+Summary: A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+Home-page: http://www.djangoproject.com/
+Author: Django Software Foundation
+Author-email: foundation@djangoproject.com
+License: BSD
+Location: c:\python27\lib\site-packages
+Requires:
+
+pip uninstall Django - uninstalls Django
+Uninstall packages:
+pip is able to uninstall most installed packages. Known exceptions are:
+Pure distutils packages installed with python setup.py install, which leave behind no metadata to determine what files were installed.
+Script wrappers installed by python setup.py develop.
+
+pip search Flask - Search for PyPI packages whose name or summary contains <query>.

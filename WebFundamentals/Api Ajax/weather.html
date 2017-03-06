@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#weather').submit(function() {
+          var location = $("input[name=city]").val();
+          $.get("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=imperial&appid=e581da0a1d6b001202013886d0642293", function(res) {
+            console.log(res);
+            var html_str = ""
+            html_str += "<h1>" +$("input[name=city]").val()+ "</h1>";
+            html_str += "<p>Temperature: " + res.main.temp +  "</p>";
+            $('#forecast').html(html_str);
+          }, 'json');
+          // don't forget to return false so the page doesn't refresh
+          return false;
+      });
+  });
+    </script>
+  </head>
+  <body>
+    <form id="weather">
+      <label><input type="text" name="city"></label>
+      <input class="submit" type="submit" value="SearchWeather">
+    </form>
+    <div id="forecast">
+    </div>
+  </body>
+</html>
